@@ -65,5 +65,53 @@ let booleanIsLoggedIn2 = Boolean(isLoggedIn2)
 let someNumber = 55
 
 let stringNumber = String(someNumber)
-console.log(stringNumber); 
-console.log(typeof stringNumber);  
+// console.log(stringNumber); 
+// console.log(typeof stringNumber);  
+
+
+
+// ********************* OPERATIONS ********************* 
+
+let value = 3 
+let negValue = -value
+// console.log(negValue); 
+// console.log(typeof negValue); 
+
+
+// console.log (2-2);
+// console.log (2**2);
+// console.log (2+2);
+// console.log (2/2);
+// console.log (2%3);   //remainder
+
+let str1 = "Hello "
+let str2 = " Ronnie"
+let str3 = (str1 + str2)
+// console.log(str3)
+
+
+
+// console.log("1" + 2);                   //output : 12
+// console.log(1 + "2");                  //output : 12
+// console.log("1" + 2 + 2);             //output : 122
+// console.log(1 + 2 + "2");            //output : 32
+
+
+// console.log((3 + 4) * 5 % 3);
+
+
+// console.log(+true);  //output : 1
+// console.log(+"");    //output : 0
+
+let gameCounter = 100;
+gameCounter++;       //postfix operator
+++gameCounter;       //prefix operator 
+//  to know more about this search on your browser "prefix & postfix js mdn"
+// console.log(gameCounter);
+
+
+/* link to study
+ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion  */
+
+
+
