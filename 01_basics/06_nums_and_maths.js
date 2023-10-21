@@ -1,0 +1,81 @@
+const score = 400; 
+// console.log(score);
+
+const balance = new Number (100)
+// console.log(balance);
+
+/* 
+NOTE: If we try it within browser's console we can see we can use some methods to the number 
+*/
+
+
+// **** METHODS for NUMBERS ****
+
+// console.log(balance.toString().length);
+// console.log(balance.toFixed(2));
+
+const otherNumber = 23.896
+const otherNumberOne = 123.896
+const otherNumberTwo = 1123.896
+
+// console.log(otherNumber.toPrecision(3));           // output = 23.9
+// console.log(otherNumberOne.toPrecision(3));        // output = 124
+// console.log(otherNumberTwo.toPrecision(3));        // output = 1.12e+3
+// 
+ const hundreds = 1000000
+// console.log (hundreds.toLocaleString());   // according to US numbersystem 
+// console.log (hundreds.toLocaleString('en-IN'));   // according to Indian numbersystem 
+
+/** 
+ If we go to browser's console and look for Number datatype, then we get some attached properties with it 
+ as we use dot after Number i.e, Number. 
+ we get a lot of properties which are as follows 
+ isSafeInteger
+ length
+ MAX_SAFE_INTEGER 
+ MIN_SAFE_INTEGER
+ MAX_VALUE 
+ MIN_VALUE
+ isFinite
+ EPSILON
+ */
+
+
+
+//  ++++++++++++++++++++ MATHS ++++++++++++++++++++
+
+console.log(Math); 
+console.log(Math.abs(-4));    // absolute = converts negative integer to positive 
+console.log(Math.round(4.6)); // round = rounds of the decimal digit
+console.log(Math.ceil(4.2));  // ceil = rounds of the decimal digit to upper limit 
+console.log(Math.floor(4.9)); // floor = rounds of the decimal digit to lower limit 
+console.log(Math.min(4, 3, 6, 8)); //min = selects the minimum value 
+console.log(Math.max(4, 3, 6, 8)); //max = selects the maximum value 
+
+
+
+// complex logic thinking with random function 
+
+console.log(Math.random());          //random = generates random value range between 0-1
+console.log(Math.random()*10);       // values shifted to left before decimal value 
+console.log(Math.floor(Math.random()*10) + 1);  // sometimes we get random value 0.1, while using floor it will be converted into 0, to end the scope of zero we add +1 , so that our number is never less than 1, output can be  something like 1.344849 etc.
+
+// suppose I need values ranging in between 10 and 20 
+const min = 10
+const max = 20 
+
+console.log (Math.floor(Math.random() * (max - min + 1)) + min ); 
+/*
+Here, 
+Math.random() --> used for random value generation 
+multiplied with (max - min + 1) to where max - min to get the range and +1 to avaoid zero cases 
+lastly, +min to get the minimum value 
+
+Play a little more with random function for better understanding 
+*/
+
+
+
+
+
+
