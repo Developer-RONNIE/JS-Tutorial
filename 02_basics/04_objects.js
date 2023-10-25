@@ -97,3 +97,80 @@ console.log(Object.values(tinderUser));    //output: [ '123abc', 'Sattu', false 
 console.log(Object.entries(tinderUser));  //output: [ [ 'id', '123abc' ], [ 'name', 'Sattu' ], [ 'isLoggedIn', false ] ]
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //output: true
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Destructing of objects 
+
+const course = {
+    coursename: 'Javascript',
+    price: "999",
+    courseInstructor : "Ronnie"
+}
+
+// console.log(course.courseInstructor); //output : Ronnie  ( it is the right practise but what it u need to call it multiple times ? we use another syntax for that case, which is shown below )
+
+const {courseInstructor} = course
+console.log(courseInstructor); //output: Ronnie (it is also good practise but for writting a clean code we can deconstruct the courseInstructor how we do that ? it is shown below)
+
+const{courseInstructor: instructor} = course
+console.log(instructor); // output : Ronnie (remember we did this for writting a clean code )
+
+
+// **** Methods with React (Example) ****
+
+// const navbar = (propes.comapny) => {  // we don't use props.company again and again instead we use deconstrction of object 
+const navbar = ({company}) => {
+//    whenever we call the navbar it will perform some function
+}
+
+navbar(comapny = "sherlockgames") //assinged some value to the navbar 
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// ***** Intro to APIs *****
+/*
+we get some values from backend, the method of writing or showcasing those values is handled by APIs
+in early times the values were showcased in XML structure which was complex to understand 
+these days the values are showcased in JSON 
+How does a JSON looks like ? 
+*/
+
+{
+    // this is JSON format : yes it is an object only but it has no name 
+    // let's understand from previous example 
+    // in the previous example the object had a name of the object 
+    // which was const course but our json structure doesn't have any name 
+    "name"  : "hitesh"
+    "coursename" : "Javascript"
+    "price" : "free"
+    //NOTE : keys & values in JSON are treated as string type
+    // the syntax might be showing some errors because it is just for example purpose 
+    // later on in this course we will work with real APIs 
+}
+
+
+// API could be in array structure too : example 
+
+[
+    {},
+    {},
+    {}
+]
+
+
+/* if you want to look for more it 
+go to https://randomuser.me/ 
+read the use case 
+and then, 
+test on 
+https://jsonformatter.org/ 
+*/ 
+
+
