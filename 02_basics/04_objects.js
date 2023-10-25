@@ -147,8 +147,8 @@ How does a JSON looks like ?
     // let's understand from previous example 
     // in the previous example the object had a name of the object 
     // which was const course but our json structure doesn't have any name 
-    "name"  : "hitesh"
-    "coursename" : "Javascript"
+    "name"  : "hitesh",
+    "coursename" : "Javascript",
     "price" : "free"
     //NOTE : keys & values in JSON are treated as string type
     // the syntax might be showing some errors because it is just for example purpose 
