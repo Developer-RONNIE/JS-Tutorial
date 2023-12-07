@@ -19,5 +19,7 @@ to get the most out of it make your seperate practise.js file and try each code 
 - Step 1: Open Terminal in your code editor 
 - Step 2: Run command "node --version"
 - Step 3: Run Command "npm --version"
-- Step 4: Run this command to execute a particular file "node <folder_name>/<file_name>.js
+- Step 4: Run this command to execute a particular file "node <folder_name>/<file_name>.js"
+
+- example of Step 4: "node 01_basics/01_variables.js"
 
