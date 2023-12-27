@@ -9,9 +9,8 @@
 
 // [comparision of non similar datatypes ( AVOID THESE COMPARISIONS IN YOUR CODE )]
 
-// console.log("02" > 1);   // output : true  (same here )
 // console.log("2" > 1);    // output : true  (string converted to number by default)
-
+// console.log("02" > 1);   // output : true  (same here )
 
 
 // console.log(null > 0);   // output : false
