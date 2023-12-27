@@ -6,7 +6,7 @@ The ECMA organization in which TC39 is working on Temporal a new Date/Time API w
 
 let myDate = new Date()
 console.log(myDate);                        // output: 2023-10-22T12:40:19.740Z (not readable)
-console.log(myDate.toString());             // output: Sun Oct 22 2023 18:10:19 GMT+0530 (India Standard Time)
+console.log(myDate.toString());             // output: Sun Oct 22 2023 18:10:19 GMT+0530 (Coordinated Universal Time)
 console.log(myDate.toDateString());         // output: Sun Oct 22 2023
 console.log(myDate.toISOString());          // output: 2023-10-22T12:40:19.740Z
 console.log(myDate.toJSON());               // output: 2023-10-22T12:40:19.740Z
@@ -17,7 +17,7 @@ console.log(myDate.toTimeString());         // output: 18:10:19 GMT+0530 (India 
 console.log(myDate.toUTCString());          // output: Sun, 22 Oct 2023 12:40:19 GMT
 console.log(myDate.getTimezoneOffset());    // output: -330
 
-console.log(typeof myDate);  // output: object
+console.log(typeof myDate);  //output: object
 
 
 let myCreateDate = new Date(2023, 0, 23, 5, 3)  // NOTE : Month starts with 0 in JS 
