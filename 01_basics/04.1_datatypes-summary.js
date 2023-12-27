@@ -1,17 +1,25 @@
 /* 
- Data is divided into 2 main types 
+ JavaScript is a dynamically typed language, meaning that the interpreter assigns variables a type at runtime based on the variable's value at the time.
 
-1. Primitive Datatypes :
--> 7 types : String, Number, Boolean, null(empty), undefined, Symbol(referencing), BigInt
+ Data is divided into 2 main types (On the basis of memory allocation &  accessibility )
+
+ ----------------------------------------------------------------------------
+
+#### 1. Primitive Datatypes : ####
+-> 7 types : String, Number, Boolean, null(empty), undefined, Symbol(used to wrap any special component in frpontend), BigInt(used to store big scientific numbers)
 */
+
+// Exmples of declarations of the primitive datatypes : 
 
 const score = 100;
 const scoreValue = 100.3;
+// In the above given examples, we learned how to define a number, Nothing special for decimal or float type(everything comes under number)
 
 const isLoggedIn = false;
 const outsideTemp = null;
-let userEmail;
+let userEmail; 
 
+// Declaration of Symbol : 
 const id = Symbol('123')
 const anotherId = Symbol("123")   
 // Verifying that both are not equal 
@@ -21,15 +29,17 @@ console.log ( id === anotherId);
 
 const bigNumber = 12323123843494598595n
 
+// ----------------------------------------------------------------------------
+
 /*
-2. Non-Primitive / Reference Datatypes :
+#### 2. Non-Primitive / Reference Datatypes : ####
 -> Array, Objects, Functions
 */
 const villains = ["Madara", "Light", "Sukuna", "Musan"]
 
 let myObj = {
     name: "Ronnie",
-    age: 22,
+    age: 24,
 }
 
 const myFunction = function(){
@@ -37,8 +47,12 @@ const myFunction = function(){
 }
 
 
-// function to know the type of any parameter 
-console.log (typeof outsideTemp);
+// function to know the type of any parameter use the following command. I will discuss the special ones 
+console.log (typeof outsideTemp);  //expected output : object 
+
+console.log (typeof villains);   //expected output : object 
+console.log (typeof myObj);      //expected output : object 
+console.log (typeof myFunction);  //expected output : object function 
 /*  Check it out more about it here 
 links : https://262.ecma-international.org/5.1/ 
 https://262.ecma-international.org/5.1/#sec-11.4.3
@@ -47,7 +61,7 @@ https://262.ecma-international.org/5.1/#sec-11.4.3
 /*
 
 #### What determines there difference ? 
-1. Call by Value : 
+1. Call by Value : (Primitive uses  Stack Memory)
 the original reference of the memory is not shared,
 the changes made in these are changed in the copy of them.
 
@@ -58,7 +72,7 @@ In call by value method of parameter passing, the values of actual parameters ar
 -> Any changes made inside functions are not reflected in the actual parameters of the caller.
 
 
-2. Call by Reference :
+2. Call by Reference : (Non-Primitive uses Heap Memory)
 
 In call by reference method of parameter passing, the address of the actual parameters is passed to the function as the formal parameters.
 
@@ -70,9 +84,38 @@ depending on how the data is stored in memory
 and 
 and how can you access or retrieve your stored data 
 
+----------------------------------------------------------------------------
+
+to understand "stack" & "heap" better check out the following link : 
+https://whimsical.com/stack-and-heap-LThhF2Aeh5kUoJT3fBPNHi
+*/
+
+// +++++++ STACK +++++++
+let myYoutubeName = "CodeWithRonnie"
+let anothername = myYoutubeName
+anothername = "ProgrammersHub"
+// console.log(myYoutubeName)
+// console.log(anothername)
+// This is due to stack uses call by Value method 
 
 
+// +++++++ HEAP +++++++
 
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ron@gmail.com" 
+
+// console.log(userOne.email)
+// console.log(userTwo.email)
+// We can see the actual value changing 
+
+/** 
+----------------------------------------------------------------------------
 
 #### Is JavaScript a statically or a dynamically typed language?
 
