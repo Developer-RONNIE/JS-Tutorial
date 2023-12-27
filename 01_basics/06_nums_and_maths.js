@@ -2,7 +2,7 @@ const score = 400;
 // console.log(score);
 
 const balance = new Number (100)
-// console.log(balance);
+// console.log(balance);  //expected output: Number: 100
 
 /* 
 NOTE: If we try it within browser's console we can see we can use some methods to the number 
@@ -11,8 +11,9 @@ NOTE: If we try it within browser's console we can see we can use some methods t
 
 // **** METHODS for NUMBERS ****
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(2));
+// console.log(balance.toString().length); // converts Number into string & now we can access methods of string also 
+
+// console.log(balance.toFixed(2)); //expected output: 100.00
 
 const otherNumber = 23.896
 const otherNumberOne = 123.896
@@ -60,7 +61,7 @@ console.log(Math.random());          //random = generates random value range bet
 console.log(Math.random()*10);       // values shifted to left before decimal value 
 console.log(Math.floor(Math.random()*10) + 1);  // sometimes we get random value 0.1, while using floor it will be converted into 0, to end the scope of zero we add +1 , so that our number is never less than 1, output can be  something like 1.344849 etc.
 
-// suppose I need values ranging in between 10 and 20 
+// suppose I need values ranging in between 10 and 20 i.e, we want to use min 7 max both 
 const min = 10
 const max = 20 
 
@@ -70,6 +71,7 @@ Here,
 Math.random() --> used for random value generation 
 multiplied with (max - min + 1) to where max - min to get the range and +1 to avaoid zero cases 
 lastly, +min to get the minimum value 
+Math.Floor to round off the value 
 
 Play a little more with random function for better understanding 
 */
