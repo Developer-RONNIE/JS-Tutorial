@@ -2,20 +2,20 @@
 
 ARRAYS - 
 - The Array object, as with arrays in other programming langugaes, 
-enables storing a collection of multiple items under a single variable name. 
-and has members for performing common array operations
+ enables storing a collection of multiple items under a single variable name. 
+ and has members for performing common array operations
 - always written in square brackets []
 - arrays in JS are resizable & mix of certain datatypes 
 - JS arrays are not associative arrays so, 
 array elements cannot be accessed using arbitary strings as indexes
 - JS arrays are zero-based-indexed
 - JS array-copy operations create shallow copies rather than deep copies 
+** Shallow Copies - A shallow copy of an object is a copy whose properties share the same reference point 
+** Deep Copies - A shallow copy of an object is a copy whose properties do not share the same reference point 
 
 */
 
 // NOTE : () --> parenthesis, [] --> brackets, {} --> braces
-// Shallow Copies : a shallow copy of an object is a copy whose properties share the same refernce points
-// Deep Copies: a deep copy of an object is a copy whose properties do not share the same refernce points
 
 
 // How to declare arrays 
@@ -38,14 +38,16 @@ console.log(myArr2[3]);
 // myArr.unshift(9)   //adds new element at the beginning of the array 
 // myArr.shift()      //removes the first element from the array
 
-// console.log(myArr.includes(9));   //output: false
+// *Some questionary methods 
+// console.log(myArr.includes(9));   //output: false 
 // console.log(myArr.indexOf(3));    //output: 3
 // console.log(myArr.indexOf(-19));  //output: -1
 
 // const newArr = myArr.join()   //Adds all the elements of an array into a string, separated by the specified separator string.
-// console.log(newArr);          // output: 0,1,2,3,4,5
-// console.log(typeof (newArr)); // output: string
 // console.log(myArr);           // output: [ 0, 1, 2, 3, 4, 5 ]
+// console.log(newArr);          // output: 0,1,2,3,4,5
+// console.log(typeof (newArr)); // *output: string
+
 
 
 
@@ -63,14 +65,14 @@ Removes elements from an array and, if necessary, inserts new elements in their 
 */
 console.log("A ", myArr);  // output: A  [ 0, 1, 2, 3, 4, 5 ]
 
-const myn1 = myArr.slice()
+const myn1 = myArr.slice(1,3)
 console.log(myn1);         // output: [ 1, 2 ]
-//conclusion : slice method doesn't manipulates the original array 
-
 console.log("B ", myArr);  // output: B  [ 0, 1, 2, 3, 4, 5 ]
+//conclusion : slice method doesn't manipulates the original array 
 
 const myn2 = myArr.splice(1,3)
 console.log(myn2);         // output: [ 1, 2, 3 ]
+console.log("C ", myArr);  // output: C  [ 0, 4, 5 ]
 //conclusion : slice method does manipulates the original array 
 
-console.log("C ", myArr);  // output: C  [ 0, 4, 5 ]
+
