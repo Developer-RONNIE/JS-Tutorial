@@ -16,19 +16,20 @@ array can store another array within itself as data
 
 // *** concat Method ***
 // const allHeros = marvel_heros.concat(dc_heros)
-// console.log(allHeros);
+// console.log(allHeros);  //output : [ 'Ironman', 'Thor', 'Spiderman', 'Superman', 'Batman', 'Flash' ]
 /* conclusion : 
 concat method adds us 2 arrays elements into one single array 
-also it requires a new array to be created store the elements of 2 different arrays 
+also it requires a new array to be created to store the elements of 2 different arrays 
 */ 
 
 
 
 // *** spread operator ***
 // const all_new_heros = [...marvel_heros, ...dc_heros]
-// console.log(all_new_heros)
+// console.log(all_new_heros) // output: [ 'Ironman', 'Thor', 'Spiderman', 'Superman', 'Batman', 'Flash' ]
 /* conclusion : 
 this operator is similar to concat method 
+// but we can add more than 2 arrays into it by adding ...array_name
 */
 
 
@@ -52,17 +53,18 @@ Returns a new array with all sub-array elements concatenated into it recursively
 
 // *** isArray Method ***
 console.log(Array.isArray("Hitesh")) // output : false 
-//  conclusion : will let you know if the value is an array or  not returns bool
+//  conclusion : Checks if the value is an array or not returns bool
 
-// *** from Method *** 
-console.log(Array.from("Ronnie"))   // output: []
+// *** from Method  - Helps in conversion into array *** 
+console.log(Array.from("Ronnie"))   // output: [ 'R', 'o', 'n', 'n', 'i', 'e' ]
 console.log(Array.from({name: "Ronnie"})) // output : [] (empty array)
-// conclusion : Creates an array from an array-like object.
+// conclusion : 
+// 1. Clealry, we can see the string "Ronnie" is onverted into an array, 2. Creates an array from an array-like object.
 
 // *** of Method ***
 let score1 = 100
 let score2 = 200
 let score3 = 300
 
-console.log(Array.of(score1, score2, score3));
-// conclusion : A set of elements to include in the new array object.
+console.log(Array.of(score1, score2, score3)); // output : [ 100, 200, 300 ]
+// conclusion : Converts a set of elements to include in the new array object.
