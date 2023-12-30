@@ -64,7 +64,8 @@ sayMyName() // this is the execution of the function
 // -----------------------------------------------------------------------------------------------
 
 // Let's see some real world problems in functions 
-// Case Study 1: 
+
+// Case Study #1: 
 // We will create a function which will add 2 numbers & print the sum of it 
 
 function addTwoNumbers(num1, num2){ // the values passed within () which is num1, num2 are called the parameters of the function addTwoNumbers
@@ -105,7 +106,7 @@ function addTwoNumber(num1, num2){
 
 // -----------------------------------------------------------------------------------------------
 
-// Another example : Case Study 2 
+// Another example : Case Study #2 
 function loginUserMessage (username){
     return `${username} just logged in`
 }
@@ -131,3 +132,30 @@ function loginUserMessage (username = "Raj" ){
 }
 // console.log(loginUserMessage()) // output: Raj (when no value is passed)
 // console.log(loginUserMessage("Ronnie")) //output : Ronnie (when value is passed & the default value will be override)
+
+// -----------------------------------------------------------------------------------------------
+//   Case Study #3
+// Let's suppose we are building an e-commerce application, it's obvious that a bunch of items will we added in the cart i.e, the parameters may keep going on ... how to manage in that situation ? 
+
+// #3.1 : When only single item is added to the cart / number of parameter & argument is definite 
+function calculateCartPrice(num1){
+    return num1
+}
+// console.log(calculateCartPrice(200)) // output: 200 
+
+// #3.2 : When more than one item is added to the cart/ no. of parameter is defintie but no. of arguments is not definite 
+function calculateCartPrice(...num1){ // we use rest operator ...
+    return num1
+}
+// console.log(calculateCartPrice(200, 300, 400)) // output: [ 200, 300, 400 ]
+// it looks familiar right ? yes it is Remember Spread Operator? ... can be used as both rest & spread operator depending on the usecase it differs 
+// So, basically the rest operator create the array of the arguments & which can be tackled using loops which we will cover soon. 
+
+
+// #3.3 : what if the parameters are val1, val2, ...num1 (interview perspective)
+function calculateCartPrice(val1, val2, ...num1){ 
+    return num1
+}
+console.log(calculateCartPrice(200, 300, 400, 500, 2000)) //output; [ 400, 500, 2000 ]
+// how did this happened on closure inspection: the 200 is assigned to val1, 300 is assigned to val2 & the rest to num1
+//  since we return num1 only, hence the function returns the num1 values, if we add val1/val2 to the return statement instead of num1, we can see the difference. 
