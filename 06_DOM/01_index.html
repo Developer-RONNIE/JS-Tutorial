@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading">DOM Learning Practice </h1>
+        <p>
+            DOM stands for Document Object Model </br>
+            At the end of the day whatever we use, react / angular. They are all made of some object. </br>
+            Similar to this html file. This is also a document. </br>
+            What are objects in this file ? </br>
+            head, body, paragrapgh all of these are objects </br>
+        </p>
+        <p>
+            To understand better </br>
+            Step1: Open any wikipedia page. I will recommend to search about "Brendan Eich". One of the founder of JS.</br>
+            Step2: Inspect on the page and try console.log(window)</br>
+            you can notice further functions within it. But we need to focus on the document property</br>
+            We will see further details about the document like - jquery, location, baseURI etc. </br>
+            Step3: console.log(document) or console.log(windows.document)</br>
+            Here we won't see all those additional things popping out. </br>
+            We will simply get the head & body </br>
+            Conclusion: Incase we need to access everything about the document & perform complex task </br>
+            We can simply check console.dir(doument) </br>
+            For getting full details about the document 
+        </p>
+        <!-- Let's try creating the diagram of DOM of this particular file  -->
+        <p>
+            Why pracricing the diagram of document is necessary ? </br>
+            To understand the relationship(parent-child class) between objects / figure out siblings </br>
+            Here, below diagram represents the DOM representation of this particular page. </br>
+            ZOOM IN for better Look </br>
+            <img src="DOM-diagram.png" alt="DOM Diagram of this html doc" width="600" height="300" >
+        </p>
+
+
+        <h1 class="heading">DOM Manipulation </h1>
+        <p>
+            Step1: Open any wikipedia page. I will recommend to search about "Brendan Eich". One of the founder of JS.</br>
+            Step2: Inspect on the page and try "document.getElementById('firstHeading')" </br>
+            You will get the desired element & it's further details ( you can select any another element too)</br>
+            Step3: document.getElementById('firstHeading').innerHTML ="<h1>Code with Ronnie</h1>" 
+            </br>
+            here we used ".innerHTML" to replace the HTNL used inside the web page </br>
+            This is all about DOM Manipulation. We will learn more about it in the next section.  
+        </p>
+
+        
+    </div>
+    
+</body>
+</html>
