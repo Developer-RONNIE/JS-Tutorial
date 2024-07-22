@@ -16,7 +16,7 @@
 
 	// Configure tool-specific properties.
 	// "customizations": {},
-	"customizations": 
+	"customizations":
 	{
 		"vscode": {
 			"extensions": [
