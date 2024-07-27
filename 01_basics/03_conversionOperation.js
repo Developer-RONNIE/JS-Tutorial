@@ -1,17 +1,18 @@
 /* *************** Conversion of DATATYPES***************  */
 
-// Sometimes we don't know what data type is coming from frontend 
+//Sometimes we don't know the value coming from the frontend is in which datatype. (might be a string/object)
 let score = 33
 let score1 = "44"
 
 // console.log(typeof score);          //output: number
+// as a method
 // console.log(typeof(score1));        //output: string
 
 // Let's make sure that the operation is performed on Number Datatype
 let valueInNumber = Number(score1)  
 // console.log(typeof valueInNumber); //output:number
 
-// What if the the input is a mixture of number & string type will it convert : Answer is No 
+// What if the the input is a impure Number 
 let score2 = "33abc"
 let valueInNumber1 = Number(score2)
 // console.log(typeof valueInNumber1);
@@ -40,9 +41,10 @@ let valueInNumber3 = Number(score4)
 
 // Boolean Conversion
 let isLoggedIn = 1
+//console.log(typeof isLoggedIn) : output number
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-// console.log(typeof booleanIsLoggedIn);
+let booleanIsLoggedIn = Boolean(isLoggedIn) 
+// console.log(typeof booleanIsLoggedIn) : output boolean
 // console.log(booleanIsLoggedIn);  //output:true
 
 
