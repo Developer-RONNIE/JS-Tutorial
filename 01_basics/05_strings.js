@@ -2,11 +2,14 @@ const name = "Ronnie"
 const repoCount = 50
 
 // ***** String Concatenation *****
-// console.log (name + repoCount + " Value");   // old method of practice and not recommended 
-//  In modern days we use ` ` (back ticks) which uses string interpolation 
-//  It makes place holders for whichever variables and can be injected directly 
+// old method of practice and not recommended 
+// console.log (name + repoCount + " Value");   
 
-// console.log (`Hello my name is ${name} and my repo count is ${repoCount}`); 
+//  In modern days we use ` ` (back ticks) which uses string interpolation 
+//  It makes place holders for variables and can be injected directly into a string.
+
+// modern method
+// console.log (`Hello my name is ${name} and my repo count is ${repoCount}`);  
 // additional benefit : we can add methods to these strings on the go. example: .ToUpperCase etc.
 
 
@@ -15,9 +18,9 @@ const repoCount = 50
 const gameName = new String('ronnie-Workspace') 
 // we used "new" keyword which uses objects of javaScripts & we named it inside of the constructors 
 
-// accessing any keys of key value pair & other properties : 
+// accessing strings as key-value pair & other properties : 
  console.log(gameName[0]);
- console.log (gameName.toUpperCase());
+ console.log (gameName.toUpperCase()); // original value won't change 
  console.log (gameName.length );
  console.log (gameName.__proto__ );
  console.log (gameName.charAt(4));
