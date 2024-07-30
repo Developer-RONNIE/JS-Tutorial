@@ -23,8 +23,8 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol("123")   
 // Verifying that both are not equal 
-console.log ( id == anotherId);
-console.log ( id === anotherId);
+// console.log ( id == anotherId);
+// console.log ( id === anotherId);
 
 
 const bigNumber = 12323123843494598595n
@@ -48,11 +48,11 @@ const myFunction = function(){
 
 
 // function to know the type of any parameter use the following command. I will discuss the special ones 
-console.log (typeof outsideTemp);  //expected output : object 
+// console.log (typeof outsideTemp);  //expected output : object 
 
-console.log (typeof villains);   //expected output : object 
-console.log (typeof myObj);      //expected output : object 
-console.log (typeof myFunction);  //expected output : object function 
+// console.log (typeof villains);   //expected output : object 
+// console.log (typeof myObj);      //expected output : object 
+// console.log (typeof myFunction);  //expected output : object function 
 /*  Check it out more about it here 
 links : https://262.ecma-international.org/5.1/ 
 https://262.ecma-international.org/5.1/#sec-11.4.3
@@ -91,27 +91,29 @@ https://whimsical.com/stack-and-heap-LThhF2Aeh5kUoJT3fBPNHi
 */
 
 // +++++++ STACK +++++++
-let myYoutubeName = "CodeWithRonnie"
-let anothername = myYoutubeName
-anothername = "ProgrammersHub"
-// console.log(myYoutubeName)
-// console.log(anothername)
+// ( primitive data type is stored )
+let myDiscordServer = "CodeWithRonnie"
+let anothername = myDiscordServer
+console.log(anothername)         //output: CodeWithRonnie
+anothername = "BuildWithRonnie"
+console.log(anothername)         //output : BuildWithRonnie
+console.log(myDiscordServer)     //output : CodeWithRonnie
 // This is due to stack uses call by Value method 
 
 
 // +++++++ HEAP +++++++
-
+// ( non-primitive datatype is stored ) 
 let userOne = {
     email : "user@gmail.com",
     upi : "user@ybl"
 }
 
 let userTwo = userOne
+// console.log(userOne.email) // output: user@gmail.com
 
 userTwo.email = "ron@gmail.com" 
-
-// console.log(userOne.email)
-// console.log(userTwo.email)
+// console.log(userOne.email)  // output: user@gmail.com
+// console.log(userTwo.email)  // output: user@gmail.com
 // We can see the actual value changing 
 
 /** 
