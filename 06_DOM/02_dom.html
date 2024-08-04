@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM Learning PART 2 <span style="display: none;">test text</span> </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, molestiae, natus dolor neque libero voluptatibus similique deleniti doloribus velit, quidem eligendi culpa voluptatem tempora mollitia voluptas doloremque suscipit provident vitae?</p>
+
+        <!-- WE WILL PERFORM DOM MANIPULATION ON THIS ABOVE PART OF THIS HTML FILE -->
+        <br>
+
+        <h1 id="title2" class="heading2"> DOM Manipulation tricks</h1>
+        <p>
+            Step1: run the server <br>
+            Step2: Inspect for this page & go to console <br>
+            Step3: try the below Codes by yourself <br>
+        </p>
+        <p>
+            
+            Code1: document.getElementById('title') <br>
+            output: <br>
+            Code2: document.getElementById('title').id <br>
+            output: 'title' <br>
+            <br>
+            <!-- web page saves classes as classNames, that's why we use classname in react in react.jsx file whihch is a html format for react we will see about in rreact series  -->
+            Code3: document.getElementById('title').class <br>
+            output: undefined <br>
+            Code4: document.getElementById('title').className <br>
+            output: 'heading' <br>
+            <br>
+            <!-- while using .getAttribute()  we need to mention which attribute we want to access or else it will throw error -->
+            Code5: document.getElementById('title').getAttribute <br>
+            output: f , which signifies a function <br>
+            Code6: document.getElementById('title').getAttribute() <br>
+            output: TypeError <br>
+            Code7: document.getElementById('title').getAttribute('id') <br>
+            output: 'title' <br>
+            Code8: document.getElementById('title').getAttribute('class') <br>
+            output: 'heading' <br>
+            <br>
+            <!-- setAttribute : the key is that is overwrites the value, However we can check it by going to elements -->
+            Code9: document.getElementById('title').setAttribute('class', test) <br>
+            output: to check within Elements : class: 'test' <br>
+            <br>
+            <!-- Storing an element into variable & manipulation  -->
+            Code10: document.getElementById('title') <br>
+            output: <br>
+            Code11: const title = document.getElementById('title') <br>
+            output: undefined ( however the variable is initialised ) <br>
+            Code12: title <br>
+            output: <br>
+            <br>
+            <!-- Styling via variable -->
+            Code13: title.style.backgroundColor = 'green' <br>
+            Code14: title.style.padding = '15px' <br>
+            Code15: title.style.borderRadius = '15px' <br>
+            <br>
+            <!-- Content Manipulation -->
+            Code16: title.textContent <br>
+            output: DOM Learning PART 2 <br>
+            Code17: title.innerHTML <br>
+            output: DOM Learning PART 2 <br>
+            Code18: title.innerText <br>
+            output: DOM Learning PART 2 <br>
+            <br>
+            STEP 1: we need to add the below code to h1 tag <br>
+            CODE : span style="display: none;">test text span <br> 
+            <br>
+            differnce : <br>
+            .innerHTML : will showecase everything inside the tag including styling and other attribute <br>
+            .textContent : will showcase the invisible text also <br>
+            .innerText : will showcase the actual visible text <br>
+            <br>
+            <!-- Query Selector  -->
+            
+            
+
+
+        </p>
+    </div>
+</body>
+</html>
