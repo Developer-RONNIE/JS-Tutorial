@@ -45,8 +45,8 @@ const otherNumberTwo = 1123.896
 
 //  ++++++++++++++++++++ MATHS ++++++++++++++++++++
 
-console.log(Math); 
-console.log(Math.abs(-4));    // absolute = converts negative integer to positive 
+console.log(Math); // it is an object 
+console.log(Math.abs(-4));    // absolute = converts negative integer to positive only.
 console.log(Math.round(4.6)); // round = rounds of the decimal digit
 console.log(Math.ceil(4.2));  // ceil = rounds of the decimal digit to upper limit 
 console.log(Math.floor(4.9)); // floor = rounds of the decimal digit to lower limit 
@@ -61,7 +61,7 @@ console.log(Math.random());          //random = generates random value range bet
 console.log(Math.random()*10);       // values shifted to left before decimal value 
 console.log(Math.floor(Math.random()*10) + 1);  // sometimes we get random value 0.1, while using floor it will be converted into 0, to end the scope of zero we add +1 , so that our number is never less than 1, output can be  something like 1.344849 etc.
 
-// suppose I need values ranging in between 10 and 20 i.e, we want to use min 7 max both 
+// suppose I need values ranging in between 10 and 20 i.e, we want to use & max both 
 const min = 10
 const max = 20 
 
