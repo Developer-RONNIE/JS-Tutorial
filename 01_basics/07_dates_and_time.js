@@ -1,6 +1,6 @@
 /* 
 JavaScript  Date objects represent a single moment in time in a platform independent format. 
-Date Objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January1, 1970, UTC(the epoch)
+Date Objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970, UTC(the epoch)
 The ECMA organization in which TC39 is working on Temporal a new Date/Time API which in under progress( for now it's just an proposal)
 */
 
@@ -20,10 +20,12 @@ console.log(myDate.getTimezoneOffset());    // output: -330
 console.log(typeof myDate);  //output: object
 
 
+// myCreateDate = new Date(2023, 0, 23)
+//console.log(myCreateDate.toDateString());       // output: Mon Jan 23 2023
+
 let myCreateDate = new Date(2023, 0, 23, 5, 3)  // NOTE : Month starts with 0 in JS 
 // let myCreateDate = new Date("2023-01-14")    // NOTE : syntax for YY/MM/DD format
-// let myCreateDate = new Date("01-14-2023")    // NOTE : syntax for MM/DD/YY format  (Followed in INDIA) 
-console.log(myCreateDate.toDateString());       // output: Mon Jan 23 2023
+// let myCreateDate = new Date("01-14-2023")    // NOTE : syntax for MM/DD/YY format  (Not Followed in INDIA) 
 console.log(myCreateDate.toLocaleString());     // output: 1/23/2023, 5:03:00 AM
 
 
@@ -37,7 +39,7 @@ console.log(myCreateDate.getTime()); // output : in milliseconds so now we can c
 // NOTE : Comparision should always be done in milliseconds 
 
 // Conversion of milliseconds into seconds. 
-console.log(Math.floor(Date.now()/1000));   // used Math.floor method to remove decimal values 
+console.log(Math.floor(Date.now()/1000));   // used Math.floor method to round off to lower decimal values 
 
 
 let newDate = new Date()
