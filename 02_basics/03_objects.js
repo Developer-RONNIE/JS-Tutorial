@@ -9,28 +9,27 @@ NOTE: if we create objects in any other way it creates multiple instances of tha
 */ 
 
 // 2. Constructor method
-// Object.create // singleton will be created would be covered later 
-// Object.create
+Object.create // singleton will be created would be covered later 
+
 
 // 1. Object Literals method 
 
-const mySym = Symbol ("key1") // declaring a symbol and printing it (interview question)***
+const mySym = Symbol ("key1") // declaring a symbol add it to keys of the object and printing it (interview question)***
 
 const JsUser = {
     name: "Ronnie", //is saved as a string
     "full name" : "Ronnie Dev", 
     [mySym]: "mykey1", // declaring the symbol as keys (interview question)***
-    age: 23,
-    location: "Jamshedpur",
+    age: 24,
+    location: "Bhubaneswar",
     "email" : "ronnie@google.com",
     isLoggedIn : false,
     lastLoginDays: ["Monday", "Saturday"]
 }
 /*
 NOTE: 
--as we know in arrays there is a concept of key value pairs where keys are predefined 
-but inobjects we can define our own keys 
-(in the above given example name, full name, age, location etc are keys of the objects)
+-as we know in arrays there is no concept of key value pairs where indicies are predefined 
+- but in objects we can store data in key value pairs, we can define our own keys (as shown in the above given example name, full name, age, location etc are keys of the objects)
 - Also, keys are treated as string type. 
 */
 
@@ -40,10 +39,12 @@ console.log(JsUser["email"]) // # Method 2: Incase the keys are written in full 
 console.log(JsUser["full name"]) // example : cannot be called using . method
 
 
-// #### Declaring a symbol and printing it (interview question)***  ####
+// #### Declaring a symbol adding it to the keys of the object and printing it (interview question)***  ####
 console.log(JsUser.mySym) //wrong practise of printing symbol, why?
 console.log(typeof JsUser.mySym) // output: string (as we can clearly see the datatype is not defined or may be string but we wanted to print symbol 
 console.log(JsUser[mySym]) // printing the symbol (correct practise)
+
+
 
 // #### changing objects value ####
 JsUser.email = "ronnie@chatgpt.com"
@@ -68,6 +69,7 @@ console.log(JsUser);
 */ 
 
 
+
 // #### Adding a function to our objects ####
 JsUser.greeting = function(){   // make sure unfreeze the object above
     console.log("Hello JS User");
@@ -75,8 +77,11 @@ JsUser.greeting = function(){   // make sure unfreeze the object above
 console.log(JsUser.greeting);   // output: [Function (anonymous)] (this is a function return back which means function is not executed but we got an function reference )
 console.log(JsUser.greeting()); // output: Hello JS User
 
+
+
+
 // adding another function but we would be referencing to the name 
 JsUser.greetingTwo = function(){   // make sure unfreeze the object
-    console.log(`Hello JS User, ${this.name}`); // output : Hello JS User, Ronnie
+    console.log(`Hello JS User, ${this.name}`); // output : Hello JS User, Ronnie // this is called string interpolation
 }
 console.log(JsUser.greetingTwo()); //output : Hello JS User, Ronnie
