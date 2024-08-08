@@ -35,24 +35,24 @@ console.log(myHeros[1]);  //output: Rengoku
 console.log(myArr2[3]);   //output: 5
 
 
-// ******* array methods  ************
+// ******* Array methods  ************
 
-// myArr.push(6)   //adds new elements at the end of the array
-// myArr.push(7)
-// myArr.pop()     //removes the last element from the array
+myArr.push(6)   //adds new elements at the end of the array
+myArr.push(7)
+myArr.pop()     //removes the last element from the array
 
-// myArr.unshift(9)   //adds new element at the beginning of the array 
-// myArr.shift()      //removes the first element from the array
+myArr.unshift(9)   //adds new element at the beginning of the array 
+myArr.shift()      //removes the first element from the array
 
 // *Some questionary methods 
-// console.log(myArr.includes(9));   //output: false 
-// console.log(myArr.indexOf(3));    //output: 3
-// console.log(myArr.indexOf(-19));  //output: -1
+console.log(myArr.includes(9));   //output: false 
+console.log(myArr.indexOf(3));    //output: 3
+console.log(myArr.indexOf(-19));  //output: -1
 
-// const newArr = myArr.join()   //Adds all the elements of an array into a string, separated by the specified separator string.
-// console.log(myArr);           // output: [ 0, 1, 2, 3, 4, 5 ]
-// console.log(newArr);          // output: 0,1,2,3,4,5
-// console.log(typeof (newArr)); // *output: string
+const newArr = myArr.join()   //Adds all the elements of an array into a string, separated by the specified separator string.
+console.log(myArr);           // output: [ 0, 1, 2, 3, 4, 5 ]
+console.log(newArr);          // output: 0,1,2,3,4,5
+console.log(typeof (newArr)); // *output: string
 
 
 
