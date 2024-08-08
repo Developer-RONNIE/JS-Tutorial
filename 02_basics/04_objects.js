@@ -1,7 +1,7 @@
 // We will see how to declare objects in singleton/with the help of constructors 
 
-// const tinderUser = {} //non-singleton object
-// console.log(tinderUser); 
+//const tinderUser = {} //non-singleton object
+//console.log(tinderUser); 
 
 const tinderUser = new Object() //this is  an singleton object
 
@@ -9,9 +9,9 @@ tinderUser.id = "123abc"
 tinderUser.name = "RanVijay"
 tinderUser.isLoggedIn = false 
 
-// console.log(tinderUser); // output : { id: '123abc', name: 'RanVijay', isLoggedIn: false }
+console.log(tinderUser); // output : { id: '123abc', name: 'RanVijay', isLoggedIn: false }
 
-// declaring objects within objects 
+// **** declaring objects within objects ****
 const regularUser = {
     email: "some@gmail.com",
     // we are declaring full name as an object 
