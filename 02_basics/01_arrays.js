@@ -11,22 +11,28 @@ array elements cannot be accessed using arbitary strings as indexes
 - JS arrays are zero-based-indexed
 - JS array-copy operations create shallow copies rather than deep copies 
 ** Shallow Copies - A shallow copy of an object is a copy whose properties share the same reference point 
-** Deep Copies - A shallow copy of an object is a copy whose properties do not share the same reference point 
+** Deep Copies - A deep copy of an object is a copy whose properties do not share the same reference point 
 
 */
 
-// NOTE : () --> parenthesis, [] --> brackets, {} --> braces
+// NOTE : () --> parenthesis, [] --> square brackets, {} --> braces
 
 
 // How to declare arrays 
+
+// This could be one way of declaring arrays 
 const myArr = [ 0, 1, 2, 3, 4, 5 ]  // values present within an array are called "Elements" can be mixed array too 
 const myHeros = ["Gojo Saturo", "Rengoku", "Itachi"]
+
+// This could be another way of declaring arrays 
 const myArr2 = new Array(2,3,4,5,6)
+
+
 // array indexing 
-console.log(myArr[0]);
-console.log(myHeros[0]);
-console.log(myHeros[1]);
-console.log(myArr2[3]);
+console.log(myArr[0]);    //output: 0 
+console.log(myHeros[0]);  //output: Gojo Saturo
+console.log(myHeros[1]);  //output: Rengoku
+console.log(myArr2[3]);   //output: 5
 
 
 // ******* array methods  ************
