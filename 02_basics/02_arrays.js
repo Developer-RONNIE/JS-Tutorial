@@ -2,34 +2,37 @@ const marvel_heros = ["Ironman", "Thor", "Spiderman"]
 const dc_heros = ["Superman", "Batman", "Flash"]
 
 //  *** push Method ***
-// marvel_heros.push(dc_heros)
+marvel_heros.push(dc_heros)
+console.log(marvel_heros);  //output: [ 'Ironman', 'Thor', 'Spiderman', [ 'Superman', 'Batman', 'Flash' ] ]
 
-// console.log(marvel_heros);  //output: [ 'Ironman', 'Thor', 'Spiderman', [ 'Superman', 'Batman', 'Flash' ] ]
-// console.log(marvel_heros[3]);  //output: [ 'Superman', 'Batman', 'Flash' ]
-// console.log(marvel_heros[3][1]); // to access a particular element within the dc_hero's array
+console.log(marvel_heros[3]);  //output: [ 'Superman', 'Batman', 'Flash' ]
+console.log(marvel_heros[3][1]); // to access a particular element within the dc_hero's array
+
 /* conclusion :
 array can store another array within itself as data 
- the 4th element in the marvel_hero's array is another element which is th dc_hero's array
+ the 4th element in the marvel_hero's array is another element which is dc_hero's array in our case. 
 */
 
 
 
 // *** concat Method ***
-// const allHeros = marvel_heros.concat(dc_heros)
-// console.log(allHeros);  //output : [ 'Ironman', 'Thor', 'Spiderman', 'Superman', 'Batman', 'Flash' ]
+const allHeros = marvel_heros.concat(dc_heros)
+console.log(allHeros);  //output : [ 'Ironman', 'Thor', 'Spiderman', 'Superman', 'Batman', 'Flash' ]
+
 /* conclusion : 
-concat method adds us 2 arrays elements into one single array 
+concat method adds us 2 arrays into one single array 
 also it requires a new array to be created to store the elements of 2 different arrays 
 */ 
 
 
 
 // *** spread operator ***
-// const all_new_heros = [...marvel_heros, ...dc_heros]
-// console.log(all_new_heros) // output: [ 'Ironman', 'Thor', 'Spiderman', 'Superman', 'Batman', 'Flash' ]
+const all_new_heros = [...marvel_heros, ...dc_heros]
+console.log(all_new_heros) // output: [ 'Ironman', 'Thor', 'Spiderman', 'Superman', 'Batman', 'Flash' ]
+
 /* conclusion : 
 this operator is similar to concat method 
-// but we can add more than 2 arrays into it by adding ...array_name
+but we can add more than 2 arrays into it by adding ...array_name
 */
 
 
@@ -55,11 +58,15 @@ Returns a new array with all sub-array elements concatenated into it recursively
 console.log(Array.isArray("Hitesh")) // output : false 
 //  conclusion : Checks if the value is an array or not returns bool
 
+
+
 // *** from Method  - Helps in conversion into array *** 
 console.log(Array.from("Ronnie"))   // output: [ 'R', 'o', 'n', 'n', 'i', 'e' ]
 console.log(Array.from({name: "Ronnie"})) // output : [] (empty array)
 // conclusion : 
-// 1. Clealry, we can see the string "Ronnie" is onverted into an array, 2. Creates an array from an array-like object.
+// 1. Clealry, we can see the string "Ronnie" is converted into an array, 2. Creates an array from an array-like object.
+
+
 
 // *** of Method ***
 let score1 = 100
