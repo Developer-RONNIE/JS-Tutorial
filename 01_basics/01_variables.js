@@ -12,7 +12,7 @@ var accountPassword = "Ron123"
 accountCity = "Jamshedpur"
 // let accountState; 
 
-console.table ([accountID, accountEmail, accountPassword, accountCity, accountState ])
+console.table ([accountID, accountEmail, accountPassword, accountCity ])
 
 // Keyword - like  const, let, var asign some memory to the variable we declare
 
@@ -26,8 +26,8 @@ accountID = 22 // Not Allowed
 
 - Differnce b/w "let" & "var" : let don't have any scope problem
 
-- In JS we can serve memory for a variable without declaring the type before it. As we can see in the accountCity 
-- But it is now recommended in production level. 
+- In JS we can reserve memory for a variable without declaring the type before it. As we can see in the accountCity 
+- But it is not recommended in production level. 
  */
 
 
