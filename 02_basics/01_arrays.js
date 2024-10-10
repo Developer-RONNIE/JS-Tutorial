@@ -18,7 +18,7 @@ array elements cannot be accessed using arbitary strings as indexes
 // NOTE : () --> parenthesis, [] --> square brackets, {} --> braces
 
 
-// How to declare arrays 
+// Declaration of Arrays  
 
 // This could be one way of declaring arrays 
 const myArr = [ 0, 1, 2, 3, 4, 5 ]  // values present within an array are called "Elements" can be mixed array too 
