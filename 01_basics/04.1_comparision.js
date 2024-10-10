@@ -1,13 +1,13 @@
 // console.log(2 > 1);   // greater than
 // console.log(2 >= 1);  // greater than equal to
 // console.log(2 < 1);   // less than
-// console.log(2 == 1);  // equal too eual to 
+// console.log(2 == 1);  // equality
 // console.log(2 != 1);  // not equal 
 
 
 /***********  COMPLEX COMPARISION **********/
 
-// [comparision of non similar datatypes ( AVOID THESE COMPARISIONS IN YOUR CODE )]
+// comparision of non similar datatypes ( AVOID THESE COMPARISIONS IN YOUR CODE )
 
 // console.log("2" > 1);    // output : true  (string converted to number by default)
 // console.log("02" > 1);   // output : true  (same here )
