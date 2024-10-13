@@ -14,7 +14,7 @@ Here, in for loop if we see carefully, we can notice few things
 5. index++                         increment operator 
 */
 
-// CaseStudy #1 :
+// CaseStudy #1 : simple for loop
 for (let i = 0; i <= 10; i++) {
     const element = i;
     // Using an conditional statement 
@@ -27,7 +27,7 @@ for (let i = 0; i <= 10; i++) {
 
 // +++++++++++++++++++++ NESTED LOOPS +++++++++++++++++++++
 
-// CaseStudy #2 :
+// CaseStudy #2 : outer & inner loop concept 
 for (let i = 0; i <= 10; i++) {
     // console.log(`Outer Loop Value: ${i}`);
     for (let j = 0; j <=10 ; j++) {
@@ -38,16 +38,16 @@ for (let i = 0; i <= 10; i++) {
     
 }
 
-// CaseStudy #3 :
+// CaseStudy #3 : Loops in array 
 let myArray = ["Spiderman", "Ironman", "Hulk"]
-// console.log (myArray.length); 
+// console.log (myArray.length); //output : 3
 for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
     // console.log(element);
     
 }
 
-// CaseStudy #4: break 
+// CaseStudy #4: break statement 
 for (let index = 1; index <=10; index++) {
     if(index ==5)
     {
@@ -62,9 +62,9 @@ for (let index = 1; index <=10; index++) {
 for (let index = 1; index <=10; index++) {
     if(index ==5)
     {
-        console.log(`Detected 5`);
+        // console.log(`Detected 5`);
         continue
     }
-    console.log(`Value of i in ${index}`);
+    // console.log(`Value of i in ${index}`); // output: 1, 2, 3, 4, 6, 7, 8, 9, 10
     
 }
