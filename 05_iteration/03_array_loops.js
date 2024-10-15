@@ -3,8 +3,9 @@
 // Arrays & Objects are very powerful in JS 
 
 // We have some common scenarios in JS, Let's dscuss them 
-["", "", ""]
-[{}, {}, {}] // we have to use any particular element from each object while iterating through them 
+["", "", ""] // array of empty strings
+[{}, {}, {}] // array of empty objects
+// we have to use any particular element from each object while iterating through them 
 
 // *** for of ***
 // Syntax : 
@@ -13,12 +14,12 @@
 // }
 const arr = [1, 2, 3, 4, 5]
 for (const num of arr) {
-    // console.log(num);
+    // console.log(num); //output : 1, 2, 3, 4, 5
 }
 
 const greetings = "Hello World!"
 for (const greet of greetings) {
-    // console.log(`${greet}`);
+    // console.log(`${greet}`); //output : H, e, l, l, o,  , W, o, r, l, d, !
 }
 // ------------------------------------------------------------------------------
 
@@ -29,27 +30,32 @@ const map = new Map ()
 map.set('IN', "India")
 map.set('UK', "United Kingdom")
 map.set('JPN', "Japan")
-// map.set('IN', "India") won't work cuz maps work on unique keys 
-// map.set('IN', "USA")
+// map.set('IN', "India") won't work cuz maps work on unique keys- values 
+// map.set('IN', "USA") won't work cuz maps work on unique keys
 // console.log(map);
 
-// applying forof on map
+// applying for-of on map
 for (const [key,value] of map) {
     // console.log(key, ':-', value);
+    /** output : 
+     * IN :- India
+     * UK :- United Kingdom
+     * JPN :- Japan
+     */
 }
 
 // ------------------------------------------------------------------------------
-// applying forof loop on objects won't work 
+// applying for-of loop on objects won't work 
 
 const myObject = {
     'game1': 'NFS',
     'game2': 'GTA',
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+ for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);\
     
-// }
+}
 
 // ------------------------------------------------------------------------------
 // *** Looping Objects with For In Loop 
@@ -89,24 +95,24 @@ const coding = ['Java', 'Cpp', 'Python', 'C', 'Ruby', 'JavaScript']
 
 // normal foreach using function 
 coding.forEach( function (val){
-    // console.log(val);
+    // console.log(val); //output : Java, Cpp, Python, C, Ruby, JavaScript
 })
 
-// foreach using this function 
+// foreach using arrow function 
 coding.forEach( (val) => {
     // console.log(val);
 })
 
 // Referencing a function 
 function printMe (item){
-    console.log(item);
+    console.log(item); //output : Java, Cpp, Python, C, Ruby, JavaScript
 }
 
 // coding.forEach(printMe) //Notice we gave a refernce of the function printMe, we didn't call the function printMe()
 
 // other important parameters 
 coding.forEach( (item, index, array) => {
-    // console.log(item, index, array);
+    // console.log(item, index, array); //output : Java, 0, [Java, Cpp, Python, C, Ruby, JavaScript]
 })
 
 // ------------------------------------------------------------------------------
@@ -130,5 +136,5 @@ const myCoding = [
 ]
 
 myCoding.forEach((item) => {
-    console.log(item.languageName);
+    console.log(item.languageName); //output : Python, Java, JavaScript
 })
