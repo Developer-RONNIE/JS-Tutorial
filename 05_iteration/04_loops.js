@@ -10,7 +10,7 @@ const myNums = [1,2,3,4,5,6,7,8,9,10]
 // })
 // console.log(newNums);
 
-// ** How to use forEach instead in filter 
+// ** How to use forEach instead of filter 
 const newNums = []  // empty array 
 myNums.forEach((num) => {
     if(num > 4){
