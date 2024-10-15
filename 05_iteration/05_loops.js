@@ -19,4 +19,4 @@ const newNums = myNumbers
 
 // output : [ 51, 61, 71, 81, 91, 101 ]
 
-console.log(newNums)
+console.log(newNums) 
